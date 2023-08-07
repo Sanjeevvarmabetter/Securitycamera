@@ -15,7 +15,7 @@ detection = False
 detection_stopped_time = None
 timer_start = False
 
-x = 5
+x = 2
 
 frame_size = (int(video.get(3)),int(video.get(4)))
 fourcc = cv2.VideoWriter_fourcc(*"mp4v")
