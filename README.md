@@ -45,15 +45,11 @@ Follow these steps to set up and run the project on your local machine:
 
 We welcome contributions to this project. Feel free to open issues, suggest improvements, or submit pull requests.
 
-## License
-
-This project is licensed under the [Your License Name] License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## Acknowledgments
 
 - [OpenCV](https://opencv.org/): Open Source Computer Vision Library.
 - [IPFS](https://ipfs.io/): InterPlanetary File System for decentralized storage.
-- [Your Blockchain Framework]: Mention the blockchain framework or platform you're using.
 
 ## Author
 
