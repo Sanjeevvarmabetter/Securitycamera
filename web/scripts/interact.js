@@ -4,7 +4,7 @@ async function main() {
     try {
         const [deployer] = await ethers.getSigners();
         const Surveillance = await ethers.getContractFactory("Surveillance");
-        const surveillance = await Surveillance.attach("0xE2A8C7006686A9C4317692bDE46e410192bacAb1");
+        const surveillance = await Surveillance.attach("0x83B8fC51546503972c2eBdea2d7ddD7179F3F1f6");
 
         // Add a record
         await surveillance.addrecord("testHash", 1623864723);
