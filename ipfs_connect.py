@@ -8,7 +8,7 @@ def upload_to_ipfs(file):
         print("file not found",file);
         return False
 
-    client = ipfshttpclient.connect()
+    client = ipfshttpclient.connect('/ip4/127.0.0.1/tcp/5001')
     
     result = client.add(file)
     print("IPFS HASH:", result['Hash'])
@@ -16,3 +16,5 @@ def upload_to_ipfs(file):
 
 file_path = './access_the_cam.py'
 ipfshash = upload_to_ipfs(file_path)
+
+
