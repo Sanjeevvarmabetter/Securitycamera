@@ -1,6 +1,29 @@
 import cv2
 import datetime
 import time
+from web3 import Web3
+import ipfshttpclient
+
+
+
+# connecting to ipfs
+ipfs_client = ipfshttpclient.connect('')
+
+# we need to connect to eth
+"""
+web3 = Web3(Web3.HTTPProvider(''))
+web3.eth.default_account = web3.eth.accounts[0]
+
+
+## abi sectiion
+
+contract_abi = ''
+contract_address = ''
+
+contract = web3.abi.contract(address=contract_address,abi=contract_abi)
+
+"""
+
 #first thing is we need to code how to access our webcam and view video from it
 
 video = cv2.VideoCapture(0)
@@ -14,7 +37,6 @@ detection = False
 
 detection_stopped_time = None
 timer_start = False
-
 x = 2
 
 frame_size = (int(video.get(3)),int(video.get(4)))

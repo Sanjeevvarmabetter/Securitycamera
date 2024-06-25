@@ -10,7 +10,7 @@ contract Surveillance {
         uint256 timestamp;
     }
 
-    // hash map address to array of rec
+    // hash map address to array of records
     mapping(address => record[]) public records;
 
     // add records
