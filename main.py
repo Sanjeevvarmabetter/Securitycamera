@@ -80,30 +80,3 @@ def record_video():
     video.release
 
     cv2.destroyAllWindows()
-
-
-
-def upload_to_ipfs(file):
-    client = ipfshttpclient.connect("/ip4/127.0.0.1/tcp/5001")
-    result = client.add(file)
-    print("IPFS HASH :",result['HASH'])
-    return result['HASH']
-
-def process_videos():
-    output_dir = 'record_vidoes'
-    metadata_file = 'ipfs.txt'
-
-    with open(metadata_file,'w') is f:
-        for i in os.listdir(output_dir):
-            if i.endswith('.mp4'):
-                file_path = os.path.join(output_dir,f)
-                ipfs_hash = upload_to_ipfs
-                timestamp = int(os,path.getmtime(file_path))
-                f.write(f"{ipfs_hash},{timestamp}\n")
-
-
-if __name__ == "__main__":
-    record_video()
-    process_videos()
-
-
