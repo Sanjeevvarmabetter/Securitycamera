@@ -4,7 +4,7 @@ from ipfshttpclient import connect
 ipfs = connect("/ip4/127.0.0.1/tcp/5001")
 
 # Upload a file to IPFS
-res = ipfs.add("path")
+res = ipfs.add("./")
 ipfs_hash = res["Hash"]
 print(f"IPFS Hash: {ipfs_hash}")
 
